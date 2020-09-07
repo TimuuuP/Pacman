@@ -1,0 +1,10 @@
+==================
+WARNING: ThreadSanitizer: thread leak (pid=14793)
+  Thread T37 (tid=14859, finished) created by thread T1 at:
+    #0 pthread_create <null> (libtsan.so.0+0x2c36e)
+    #1 Level /home/simone/Desktop/pacman/main.c:285 (game+0x233e)
+
+SUMMARY: ThreadSanitizer: thread leak (/usr/lib/x86_64-linux-gnu/libtsan.so.0+0x2c36e) in __interceptor_pthread_create
+==================
+ThreadSanitizer: reported 1 warnings
+make: *** [Makefile:21: run] Error 66
